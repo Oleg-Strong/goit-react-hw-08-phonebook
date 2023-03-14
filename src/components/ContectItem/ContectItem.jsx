@@ -48,7 +48,7 @@ const ContactItem = ({ contact }) => {
           {name}:
         </Typography>
         <Tooltip title="Call">
-          <a href={`tel:+${number}`}>
+          <a href={`tel:+38${number}`}>
             <Typography
               variant="subtitle2"
               color={theme.palette.primary.third}

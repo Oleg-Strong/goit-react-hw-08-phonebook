@@ -22,7 +22,7 @@ const UpdateContactForm = ({ contactValues, closeModal }) => {
     number: yup
       .string()
       .required('number field is required')
-      .phone('UA', true, 'enter the number in the format +380(**)-***-**-**'),
+      .phone('UA', true, 'enter the number in the format (***)-***-**-**'),
   });
   const initialValues = {
     name: name,
