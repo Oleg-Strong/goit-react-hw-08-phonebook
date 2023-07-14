@@ -9,7 +9,7 @@ import {
 const extraActions = [fetchContacts, addContact, deleteContact];
 const getActions = type => extraActions.map(action => action[type]);
 
-const contactsSlise = createSlice({
+const contactsSlice = createSlice({
   name: 'contacts',
   initialState: {
     items: [],
@@ -27,7 +27,7 @@ const contactsSlise = createSlice({
       })
       .addCase(deleteContact.fulfilled, (state, action) => {
         state.items = state.items.filter(
-          contect => contect.id !== action.payload.id
+          contact => contact.id !== action.payload.id
         );
       })
       .addCase(updateContact.fulfilled, (state, action) => {
@@ -55,7 +55,7 @@ const contactsSlise = createSlice({
 //   state.error = action.payload;
 // };
 
-// const contactsSlise = createSlice({
+// const contactsSlice = createSlice({
 //   name: 'contacts',
 //   initialState: {
 //     items: [],
@@ -85,11 +85,11 @@ const contactsSlise = createSlice({
 //       state.isLoading = false;
 //       state.error = null;
 //       state.items = state.items.filter(
-//         contect => contect.id !== action.payload.id
+//         contact => contact.id !== action.payload.id
 //       );
 //     },
 //     [deleteContact.rejected]: handleRejected,
 //   },
 // });
 
-export const contactsReducer = contactsSlise.reducer;
+export const contactsReducer = contactsSlice.reducer;

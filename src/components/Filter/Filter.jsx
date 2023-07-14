@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { changeFilter } from 'redux/contacts/filterSlise';
+import { changeFilter } from 'redux/contacts/filterSlice';
 import { useContacts } from 'hooks/useContacts';
 import { Box, TextField, Typography } from '@mui/material';
 import { theme } from 'theme/theme';
