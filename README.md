@@ -5,7 +5,7 @@
 The "Phonebook" project is a small web application for storing and managing a
 list of contacts. It is built using React, Redux and React Router. Material UI
 libraries are used for styling. Redux Toolkit is used for data handling and
-state management. Axios library is used for API communication. Yup librari are
+state management. Axios library is used for API communication. Yup library are
 used for form validation. React-Icons and React-Hot-Toast libraries are used for
 improving user experience.
 
